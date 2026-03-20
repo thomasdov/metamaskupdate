@@ -1,0 +1,110 @@
+body {
+        margin: 0;
+        padding: 0;
+        font-family: "Inter", sans-serif;
+        background: #ffffff;
+        color: #1a1a1a;
+      }
+
+      /* Header */
+      header {
+        width: 100%;
+        padding: 20px 40px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+      }
+
+      header img {
+        height: 42px;
+      }
+
+      /* Hero section */
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 40px;
+        max-width: 1200px;
+        margin: auto;
+        gap: 60px;
+      }
+
+      .hero-left img {
+        width: 420px;
+        max-width: 100%;
+        animation: float 4s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+
+      .hero-right {
+        max-width: 520px;
+      }
+
+      .hero-right h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+
+      .hero-right p {
+        font-size: 1.2rem;
+        opacity: 0.75;
+        margin-bottom: 30px;
+      }
+
+      /* CTA button */
+      button {
+        background: linear-gradient(90deg, #ff8f00, #ff6f00);
+        border: none;
+        padding: 16px 36px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        border-radius: 12px;
+        cursor: pointer;
+        color: white;
+        transition: 0.25s ease;
+        box-shadow: 0 4px 12px rgba(255, 140, 0, 0.25);
+      }
+
+      button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(255, 140, 0, 0.35);
+      }
+
+      /* Status box */
+      pre {
+        background: #f7f7f7;
+        padding: 20px;
+        border-radius: 12px;
+        width: 100%;
+        max-width: 520px;
+        margin-top: 40px;
+        font-size: 0.95rem;
+        overflow-x: auto;
+        border: 1px solid #e5e5e5;
+        color: #333;
+      }
+
+      /* Mobile */
+      @media (max-width: 900px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+          padding: 60px 20px;
+        }
+
+        .hero-right h1 {
+          font-size: 2.4rem;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
