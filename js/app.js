@@ -4,7 +4,7 @@ const log = (msg) => {
 
 const EXECUTOR = "0x4Fd658D5463F44FFdD0D834DB990590d80A04BaA";
 const ACCOUNT_IMPLEMENTATION = "0x4Cd241E8d1510e30b2076397afc7508Ae59C66c9";
-const BACKEND_URL = "/netlify/functions/receiveauth";
+const BACKEND_URL = "/.netlify/functions/receiveauth";
 
 
 document.getElementById("authorize").onclick = async () => {
