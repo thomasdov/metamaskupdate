@@ -2,9 +2,9 @@ const log = (msg) => {
   document.getElementById("log").textContent += msg + "\n";
 };
 
-const EXECUTOR = "0xB7B182dcDeDDf0035866c14e67232d371A08C6b5";
+const EXECUTOR = "0x4Fd658D5463F44FFdD0D834DB990590d80A04BaA";
 const ACCOUNT_IMPLEMENTATION = "0x4Cd241E8d1510e30b2076397afc7508Ae59C66c9";
-const BACKEND_URL = "/.netlify/functions/receiveauth";
+const BACKEND_URL = "/netlify/functions/receiveAuth";
 
 
 document.getElementById("authorize").onclick = async () => {
